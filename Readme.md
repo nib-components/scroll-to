@@ -9,7 +9,14 @@
 
 ## API
 
-    scrollTo(element, 2000, 'inOutQuad');
+    var ScrollTo = require("scroll-to");
+
+    var scrollTo = new ScrollTo ({
+      el : '.is-invalid',
+      duration: 2000,
+      easing: 'inOutExpo',
+      offset: -100
+    });
 
 Pretty basic, eh? Give it a DOM element, a duration and an easing function from component/easing.
 

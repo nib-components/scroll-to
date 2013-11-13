@@ -1,9 +1,13 @@
 var ease = require('ease');
 var offset = require('offset');
 
-function scrollTo(el, duration, easingType, scrollOffset) {
-  scrollOffset = scrollOffset == null ? 0 : scrollOffset;
-  var easing = easingType ? ease[easingType] : ease['linear'];
+function ScrollTo(options) {
+  var options = options || {};
+  var el = document.querySelector(options.el);
+  var duration = options.duration || 2000;
+  var easing = options.easing ? ease[options.easing] : ease['linear'];
+  var scrollOffset = options.offset || 0;
+
   var stop = false;
   var start = Date.now();
   var html = document.getElementsByTagName('html')[0];
@@ -24,6 +28,6 @@ function scrollTo(el, duration, easingType, scrollOffset) {
   };
 
   updatePosition();
-};
+}
 
-module.exports = scrollTo;
+module.exports = ScrollTo;
