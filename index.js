@@ -1,7 +1,7 @@
 var ease = require('ease');
 var offset = require('offset');
 
-function ScrollTo(options) {
+function scrollTo(options) {
   var options = options || {};
   var el = document.querySelector(options.el);
   var duration = options.duration || 2000;
@@ -30,4 +30,4 @@ function ScrollTo(options) {
   updatePosition();
 }
 
-module.exports = ScrollTo;
+module.exports = scrollTo;

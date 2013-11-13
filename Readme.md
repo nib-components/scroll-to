@@ -9,9 +9,9 @@
 
 ## API
 
-    var ScrollTo = require("scroll-to");
+    var scrollTo = require("scroll-to");
 
-    var scrollTo = new ScrollTo ({
+    scrollTo({
       el : '.is-invalid',
       duration: 2000,
       easing: 'inOutExpo',
