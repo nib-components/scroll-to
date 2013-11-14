@@ -1,4 +1,3 @@
-
 # scroll-to
 
   Animate scrolling to elements.
@@ -9,14 +8,7 @@
 
 ## API
 
-    var scrollTo = require("scroll-to");
-
-    scrollTo({
-      el : '.is-invalid',
-      duration: 2000,
-      easing: 'inOutExpo',
-      offset: -100
-    });
+    scrollTo(element, 2000, 'inOutQuad');
 
 Pretty basic, eh? Give it a DOM element, a duration and an easing function from component/easing.
 
