@@ -3,6 +3,7 @@ var offset = require('offset');
 
 function scrollTo(el, duration, easingType, scrollOffset) {
   scrollOffset = scrollOffset == null ? 0 : scrollOffset;
+  el = el.nodeName ? el : document.querySelector(el);
   var easing = easingType ? ease[easingType] : ease['linear'];
   var stop = false;
   var start = Date.now();
@@ -24,6 +25,6 @@ function scrollTo(el, duration, easingType, scrollOffset) {
   };
 
   updatePosition();
-};
+}
 
 module.exports = scrollTo;
