@@ -1,0 +1,19 @@
+{
+  "name": "@nib-components/scroll-to",
+  "version": "0.0.7",
+  "description": "Animate scrolling to points",
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nib-components/scroll-to.git"
+  },
+  "dependencies": {
+    "ease-component": "1.0.0",
+    "offset": "0.0.1"
+  },
+  "browser": {
+    "ease": "ease-component"
+  }
+}
