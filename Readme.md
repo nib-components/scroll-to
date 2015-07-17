@@ -1,4 +1,3 @@
-
 # scroll-to
 
   Animate scrolling to elements.
