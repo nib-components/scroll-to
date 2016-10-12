@@ -1,5 +1,11 @@
-var ease = require('ease');
+var ease;
 var offset = require('offset');
+
+try {
+  ease = require('ease-component');
+} catch (err) {
+  ease = require('ease');
+}
 
 function scrollTo(el, duration, easingType, scrollOffset) {
   scrollOffset = scrollOffset == null ? 0 : scrollOffset;
